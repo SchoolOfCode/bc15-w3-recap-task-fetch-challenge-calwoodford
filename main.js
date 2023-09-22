@@ -1,8 +1,10 @@
 let buttonText = document.getElementById("apodButton")
 
+//Changes the button text back from 'Please wait!'
 function changeButtonText() {
     buttonText.textContent = ("Get new APOD")}
 
+//Timeout to check if the person is still there
 function stillThere() {
     alert('Are you still there?');
 }
