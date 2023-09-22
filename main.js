@@ -50,11 +50,15 @@ async function changeText(){
     let newApodText = newText[random]["explanation"]
     let newApodImage = newText[random]["hdurl"]
 
+    // Selects DOM elements
     let description = document.getElementById("apodText")
     let imageElement = document.getElementById("apodImage")
 
-    imageElement.src = newApodImage;
+    // Assigns parsed data to DOM elements
     description.textContent = newApodText
+    imageElement.src = newApodImage;
+
+    // Reverts button to original state
     changeButtonText()
 }
 
